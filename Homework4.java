@@ -1,3 +1,28 @@
+/**
+ * Name:陳信邦
+ * ID: U10316009
+ * Ex: 11.10
+ */
+import java.util.*;
+
+public class Homework4{
+	//main class
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		newMyStack NMS = new newMyStack();
+		//把使用者輸入存進Arraylist
+		for(int i = 0 ; i < 5 ; i++){
+			System.out.print("Enter a string\n");
+			String user = input.next();
+			NMS.push(user);
+		}
+		//用迴圈將陣列印出
+		while(!NMS.isEmpty()){
+			System.out.print(NMS.pop() + " ");
+		}
+	}
+}
+
 class newMyStack extends ArrayList<Object>{
 	//判斷是不是空的
 	public boolean isEmpty(){
