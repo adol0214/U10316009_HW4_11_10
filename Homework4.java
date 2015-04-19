@@ -17,3 +17,4 @@ class newMyStack extends ArrayList<Object>{
 		return A;
 	}
 }
+   
